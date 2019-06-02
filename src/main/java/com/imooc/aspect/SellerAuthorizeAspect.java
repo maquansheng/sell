@@ -37,7 +37,7 @@ public class SellerAuthorizeAspect  {
 
     @Before("verify()")
     public void doVerify(){
-      /*  ServletRequestAttributes attributes= (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
+        ServletRequestAttributes attributes= (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
        HttpServletRequest request= attributes.getRequest();
         //查询cookie
         Cookie cookie = CookieUtil.get(request, CookieConstant.TOKEN);
@@ -50,6 +50,6 @@ public class SellerAuthorizeAspect  {
         if (tokenValue==null){
             log.warn("【校验异常】");
             throw new SellerAuthorizeException();
-        }*/
+        }
     }
 }
